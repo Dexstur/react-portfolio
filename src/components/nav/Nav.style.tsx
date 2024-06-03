@@ -17,12 +17,12 @@ export const NavWrapper = styled.nav`
 `;
 
 export const NavItem = styled.a<{ active: Boolean }>`
-  background: ${({ active }) => (active ? "var(--color-bg)" : "transparent")};
+  background: ${({ active }) =>
+    active ? "var(--color-primary)" : "transparent"};
   padding: 0.8rem;
   border-radius: 50%;
   display: flex;
-  color: ${({ active }) =>
-    active ? "var(--color-white)" : "var(--color-light)"};
+  color: ${({ active }) => (active ? "var(--color-bg)" : "var(--color-light)")};
   font-size: 1.1rem;
 
   &:hover {
