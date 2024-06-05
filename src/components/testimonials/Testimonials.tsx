@@ -7,7 +7,6 @@ import {
   ClientName,
   ClientReview,
 } from "./Testimonial.style";
-import ME from "/psp.jpg";
 import { testimonials } from "./testimonial.data";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
@@ -25,29 +24,6 @@ function Testimonials() {
         slidesPerView={1}
         pagination={{ clickable: true }}
       >
-        <TestimonialCard>
-          <ClientAvatar>
-            <ClientImg src={ME} alt="Client" />
-          </ClientAvatar>
-          <ClientName>Client 1</ClientName>
-          <ClientReview>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-            tincidunt, urna nec lacinia volutpat, libero sapien ultricies dolor,
-            nec commodo erat est vel nisl. Donec sed odio dui.
-          </ClientReview>
-        </TestimonialCard>
-        <TestimonialCard>
-          <ClientAvatar>
-            <ClientImg src={ME} alt="Client" />
-          </ClientAvatar>
-          <ClientName>Client 1</ClientName>
-          <ClientReview>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-            tincidunt, urna nec lacinia volutpat, libero sapien ultricies dolor,
-            nec commodo erat est vel nisl. Donec sed odio dui.
-          </ClientReview>
-        </TestimonialCard>
-
         {testimonials.map((testimonial, index) => (
           <TestimonialCard key={index}>
             <ClientAvatar>

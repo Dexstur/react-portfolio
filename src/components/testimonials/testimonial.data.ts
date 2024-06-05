@@ -1,5 +1,5 @@
-import ME from "/psp.jpg";
 import val from "/val.jpg";
+import dave from "/dave.jpg";
 
 interface TestimonialData {
   name: string;
@@ -15,9 +15,9 @@ export const testimonials: TestimonialData[] = [
       "Chukwuka is a highly skilled full stack developer, adept in both frontend and backend technologies, and consistently delivers innovative solutions with a strong work ethic. A quick learner and a flexible professional, Chuks excels in utilizing AGILE methodologies to drive project success. As both a competent leader and a valuable team player, Chuks brings intelligence, dedication, and collaborative spirit to every project.",
   },
   {
-    name: "Client 1",
-    img: ME,
+    name: "David Ojimba",
+    img: dave,
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt, urna nec lacinia volutpat, libero sapien ultricies dolor, nec commodo erat est vel nisl. Donec sed odio dui.",
+      "Chuks is a dedicated full stack developer known for their hard work and goal-driven mindset. Their intelligence and innovative approach consistently lead to exceptional solutions and successful project outcomes. Chuks' commitment and technical expertise make them a valuable asset to any team.",
   },
 ];
