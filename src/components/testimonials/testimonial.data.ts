@@ -18,6 +18,6 @@ export const testimonials: TestimonialData[] = [
     name: "David Ojimba",
     img: dave,
     review:
-      "Chuks is a dedicated full stack developer known for his hard work and goal-driven mindset. His intelligence and innovative approach consistently lead to exceptional solutions and successful project outcomes. Chuks' commitment and technical expertise make them a valuable asset to any team.",
+      "Chuks is a dedicated full stack developer known for his hard work and goal-driven mindset. His intelligence and innovative approach consistently lead to exceptional solutions and successful project outcomes. Chuks' commitment and technical expertise make him a valuable asset to any team.",
   },
 ];
