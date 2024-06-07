@@ -34,7 +34,7 @@ function Experience() {
               <div>
                 <ExpSkillHead>CSS</ExpSkillHead>
                 <ExpSkillSmall className="text-light">
-                  Intermediate
+                  Experienced
                 </ExpSkillSmall>
               </div>
             </ExpSkill>
@@ -61,7 +61,7 @@ function Experience() {
               <div>
                 <ExpSkillHead>Tailwind</ExpSkillHead>
                 <ExpSkillSmall className="text-light">
-                  Intermediate
+                  Experienced
                 </ExpSkillSmall>
               </div>
             </ExpSkill>
@@ -70,7 +70,7 @@ function Experience() {
               <div>
                 <ExpSkillHead>React</ExpSkillHead>
                 <ExpSkillSmall className="text-light">
-                  Intermediate
+                  Experienced
                 </ExpSkillSmall>
               </div>
             </ExpSkill>
@@ -84,7 +84,7 @@ function Experience() {
               <div>
                 <ExpSkillHead>Nodejs</ExpSkillHead>
                 <ExpSkillSmall className="text-light">
-                  Intermediate
+                  Experienced
                 </ExpSkillSmall>
               </div>
             </ExpSkill>
@@ -93,7 +93,7 @@ function Experience() {
               <div>
                 <ExpSkillHead>Nestjs</ExpSkillHead>
                 <ExpSkillSmall className="text-light">
-                  Intermediate
+                  Experienced
                 </ExpSkillSmall>
               </div>
             </ExpSkill>
@@ -109,7 +109,7 @@ function Experience() {
               <div>
                 <ExpSkillHead>MongoDB</ExpSkillHead>
                 <ExpSkillSmall className="text-light">
-                  intermediate
+                  Intermediate
                 </ExpSkillSmall>
               </div>
             </ExpSkill>
