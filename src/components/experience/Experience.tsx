@@ -79,7 +79,7 @@ function Experience() {
               <div>
                 <ExpSkillHead>Nextjs</ExpSkillHead>
                 <ExpSkillSmall className="text-light">
-                  Intermediate
+                  Experienced
                 </ExpSkillSmall>
               </div>
             </ExpSkill>
@@ -127,7 +127,7 @@ function Experience() {
               <div>
                 <ExpSkillHead>SQL</ExpSkillHead>
                 <ExpSkillSmall className="text-light">
-                  Intermediate
+                  Experienced
                 </ExpSkillSmall>
               </div>
             </ExpSkill>
@@ -145,6 +145,15 @@ function Experience() {
               <div>
                 <ExpSkillHead>Java</ExpSkillHead>
                 <ExpSkillSmall className="text-light">Basic</ExpSkillSmall>
+              </div>
+            </ExpSkill>
+            <ExpSkill>
+              <BsPatchCheckFill className="exp__icon" />
+              <div>
+                <ExpSkillHead>Docker</ExpSkillHead>
+                <ExpSkillSmall className="text-light">
+                  Intermediate
+                </ExpSkillSmall>
               </div>
             </ExpSkill>
           </ExpContent>
