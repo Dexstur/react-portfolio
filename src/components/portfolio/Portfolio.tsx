@@ -24,7 +24,7 @@ function Portfolio() {
             <PortfolioHead>{item.title}</PortfolioHead>
             <PortfolioCta>
               <a href={item.github} className="btn" target="_blank">
-                Github
+                {item.github === "#" ? "Private" : "Github"}
               </a>
               <a href={item.url} className="btn btn-primary" target="_blank">
                 Visit
