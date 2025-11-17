@@ -33,7 +33,7 @@ function About() {
             <AboutCard>
               <FaAward color="#4db5ff" size={"1.4rem"} />
               <CardHead>Experience</CardHead>
-              <CardSmall>1 Year Work Experience</CardSmall>
+              <CardSmall>3 Years Work Experience</CardSmall>
             </AboutCard>
             <AboutCard>
               <FiUsers color="#4db5ff" size={"1.4rem"} />
@@ -43,23 +43,26 @@ function About() {
             <AboutCard>
               <VscFolderLibrary color="#4db5ff" size={"1.4rem"} />
               <CardHead>Projects</CardHead>
-              <CardSmall>6+ Completed projects</CardSmall>
+              <CardSmall>10+ Completed projects</CardSmall>
             </AboutCard>
           </AboutDeck>
           <AboutInfo>
             <p>
-              Hello there! I'm a full stack developer, and this is where my
-              digital journey unfolds. I'm here to turn ideas into immersive web
-              experiences, blending innovation with technology. My work is a
-              fusion of creativity and functionality,with the aim of delivering
-              efficient and optimized solutions, I can't wait to share it with
-              you.
+              Hello there! I am a mid-level full stack developer with 3 years of
+              hands-on experience building scalable, user-centric web
+              applications using TypeScript, React, Next.js, and Node.js.
+              Skilled in designing RESTful and microservice APIs using NestJS,
+              Docker, Prisma, MySQL and PostgreSQL. Fast learner with a strong
+              grasp of modern development workflows, state management, and UI
+              frameworks. Passionate about clean architecture, developer
+              experience, and building intuitive frontend experiences
             </p>
             <p>
-              Whether you're a fellow developer looking to collaborate or an
-              employer seeking a tech-savvy problem solver, let's connect and
-              create something extraordinary. Explore my portfolio to see what I
-              can bring to the table.
+              I am always willing and eager to learn and try out new
+              technologies and frameworks. I excel at breaking down complex
+              problems into manageable tasks and delivering high-quality code on
+              time. I thrive in collaborative environments and enjoy working
+              with cross-functional teams to create innovative solutions.
             </p>
           </AboutInfo>
           <a href="#contact" className="btn btn-primary">

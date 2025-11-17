@@ -75,6 +75,12 @@ function Services() {
                 Live communications with web sockets
               </ServiceListContent>
             </ServiceListItem>
+            <ServiceListItem>
+              <BiCheck className="service__icon" />
+              <ServiceListContent>
+                Containerization using docker
+              </ServiceListContent>
+            </ServiceListItem>
           </ServiceList>
         </ServicesCard>
       </ServicesContainer>

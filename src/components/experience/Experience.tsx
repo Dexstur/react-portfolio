@@ -74,6 +74,15 @@ function Experience() {
                 </ExpSkillSmall>
               </div>
             </ExpSkill>
+            <ExpSkill>
+              <BsPatchCheckFill className="exp__icon" />
+              <div>
+                <ExpSkillHead>Nextjs</ExpSkillHead>
+                <ExpSkillSmall className="text-light">
+                  Experienced
+                </ExpSkillSmall>
+              </div>
+            </ExpSkill>
           </ExpContent>
         </ExpCard>
         <ExpCard>
@@ -109,7 +118,7 @@ function Experience() {
               <div>
                 <ExpSkillHead>MongoDB</ExpSkillHead>
                 <ExpSkillSmall className="text-light">
-                  Intermediate
+                  Experienced
                 </ExpSkillSmall>
               </div>
             </ExpSkill>
@@ -118,7 +127,7 @@ function Experience() {
               <div>
                 <ExpSkillHead>SQL</ExpSkillHead>
                 <ExpSkillSmall className="text-light">
-                  Intermediate
+                  Experienced
                 </ExpSkillSmall>
               </div>
             </ExpSkill>
@@ -126,6 +135,22 @@ function Experience() {
               <BsPatchCheckFill className="exp__icon" />
               <div>
                 <ExpSkillHead>GraphQl</ExpSkillHead>
+                <ExpSkillSmall className="text-light">
+                  Experienced
+                </ExpSkillSmall>
+              </div>
+            </ExpSkill>
+            <ExpSkill>
+              <BsPatchCheckFill className="exp__icon" />
+              <div>
+                <ExpSkillHead>Java</ExpSkillHead>
+                <ExpSkillSmall className="text-light">Basic</ExpSkillSmall>
+              </div>
+            </ExpSkill>
+            <ExpSkill>
+              <BsPatchCheckFill className="exp__icon" />
+              <div>
+                <ExpSkillHead>Docker</ExpSkillHead>
                 <ExpSkillSmall className="text-light">
                   Intermediate
                 </ExpSkillSmall>

@@ -1,6 +1,6 @@
-import medbay from "/medbay.png";
 import blog from "/decablog.png";
 import moniePaddy from "/moniePaddy.png";
+import warpspeed from "/warpspeed_base.png";
 
 interface PortfolioDataItem {
   title: string;
@@ -12,11 +12,11 @@ interface PortfolioDataItem {
 
 export const portfolioItems: PortfolioDataItem[] = [
   {
-    title: "Hospital Report Model",
-    img: medbay,
-    alt: "medbay",
-    github: "https://github.com/Dexstur/hospital-model-ejs",
-    url: "https://hospital-report-system.onrender.com/",
+    title: "Warpspeed Financials",
+    img: warpspeed,
+    alt: "WarpSpeed",
+    github: "#",
+    url: "https://warpspeedng.com",
   },
   {
     title: "Decablog - Developers blog",
