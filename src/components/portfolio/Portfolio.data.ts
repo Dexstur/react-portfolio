@@ -1,4 +1,3 @@
-import blog from "/decablog.png";
 import moniePaddy from "/moniePaddy.png";
 import warpspeed from "/warpspeed_base.png";
 import loopfreight from "/loopfreight.png";
