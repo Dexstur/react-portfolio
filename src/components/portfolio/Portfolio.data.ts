@@ -1,6 +1,7 @@
 import blog from "/decablog.png";
 import moniePaddy from "/moniePaddy.png";
 import warpspeed from "/warpspeed_base.png";
+import loopfreight from "/loopfreight.png";
 
 interface PortfolioDataItem {
   title: string;
@@ -19,11 +20,11 @@ export const portfolioItems: PortfolioDataItem[] = [
     url: "https://warpspeedng.com",
   },
   {
-    title: "Decablog - Developers blog",
-    img: blog,
-    alt: "Decablog",
-    github: "https://github.com/Dexstur/decablog-frontend",
-    url: "https://decablog16.onrender.com/",
+    title: "Loopfreight - Logistics platform",
+    img: loopfreight,
+    alt: "Loopfreight",
+    github: "#",
+    url: "https://useloopfreight.com/",
   },
   {
     title: "Monie Paddy-Demo Payment app",
