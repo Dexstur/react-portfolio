@@ -19,50 +19,47 @@ import { VscFolderLibrary } from "react-icons/vsc";
 function About() {
   return (
     <AboutSection id="about">
-      <h5>Get To Know</h5>
+      <h5>Get to know</h5>
       <h2>About Me</h2>
 
       <AboutContainer className="container">
         <AboutMe>
           <AboutImgContainer>
-            <AboutImg src={Me} alt="me" />
+            <AboutImg src={Me} alt="Isichei Chukwuka" />
           </AboutImgContainer>
         </AboutMe>
         <AboutContent>
           <AboutDeck>
             <AboutCard>
-              <FaAward color="#4db5ff" size={"1.4rem"} />
+              <FaAward color="#7c6aff" size="1.4rem" />
               <CardHead>Experience</CardHead>
-              <CardSmall>3 Years Work Experience</CardSmall>
+              <CardSmall>5+ Years</CardSmall>
             </AboutCard>
             <AboutCard>
-              <FiUsers color="#4db5ff" size={"1.4rem"} />
+              <FiUsers color="#7c6aff" size="1.4rem" />
               <CardHead>Collaborators</CardHead>
-              <CardSmall>15+ Developers</CardSmall>
+              <CardSmall>25+ Developers</CardSmall>
             </AboutCard>
             <AboutCard>
-              <VscFolderLibrary color="#4db5ff" size={"1.4rem"} />
+              <VscFolderLibrary color="#7c6aff" size="1.4rem" />
               <CardHead>Projects</CardHead>
-              <CardSmall>10+ Completed projects</CardSmall>
+              <CardSmall>10+ Delivered</CardSmall>
             </AboutCard>
           </AboutDeck>
           <AboutInfo>
             <p>
-              Hello there! I am a mid-level full stack developer with 3 years of
-              hands-on experience building scalable, user-centric web
-              applications using TypeScript, React, Next.js, and Node.js.
-              Skilled in designing RESTful and microservice APIs using NestJS,
-              Docker, Prisma, MySQL and PostgreSQL. Fast learner with a strong
-              grasp of modern development workflows, state management, and UI
-              frameworks. Passionate about clean architecture, developer
-              experience, and building intuitive frontend experiences
+              Full Stack Developer with expertise building production-grade web
+              applications using TypeScript across frontend and backend.
+              Experienced delivering fintech, real-time communication,
+              healthcare, logistics and enterprise solutions from architecture
+              through deployment.
             </p>
             <p>
-              I am always willing and eager to learn and try out new
-              technologies and frameworks. I excel at breaking down complex
-              problems into manageable tasks and delivering high-quality code on
-              time. I thrive in collaborative environments and enjoy working
-              with cross-functional teams to create innovative solutions.
+              Skilled in React, Next.js, Node.js, NestJS, REST, GraphQL, AWS
+              deployments, Docker, Redis, SQL/NoSQL databases, authentication,
+              and AI-assisted development workflows. I thrive in collaborative
+              environments and excel at breaking down complex problems into
+              manageable, high-quality deliverables.
             </p>
           </AboutInfo>
           <a href="#contact" className="btn btn-primary">

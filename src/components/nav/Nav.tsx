@@ -1,49 +1,64 @@
-import { NavWrapper, NavItem } from "./Nav.style";
-import { useState } from "react";
-import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { BiBook } from "react-icons/bi";
-import { RiServiceLine } from "react-icons/ri";
-import { MdOutlineMessage } from "react-icons/md";
+import { NavWrapper, NavLogo, NavLinks, NavItem, NavCta } from "./Nav.style";
+import { useState, useEffect } from "react";
+
+const sections = ["about", "experience", "portfolio", "testimonial", "contact"];
 
 function Nav() {
   const [activeNav, setActiveNav] = useState("#");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            setActiveNav(`#${entry.target.id}`);
+          }
+        }
+      },
+      { rootMargin: "-40% 0px -55% 0px" }
+    );
+
+    const elements = sections
+      .map((id) => document.getElementById(id))
+      .filter(Boolean) as HTMLElement[];
+
+    elements.forEach((el) => observer.observe(el));
+
+    const handleScroll = () => {
+      if (window.scrollY < 200) {
+        setActiveNav("#");
+      }
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <NavWrapper>
-      <NavItem
-        href="#"
-        active={activeNav === "#"}
-        onClick={() => setActiveNav("#")}
-      >
-        <AiOutlineHome />
-      </NavItem>
-      <NavItem
-        href="#about"
-        active={activeNav === "#about"}
-        onClick={() => setActiveNav("#about")}
-      >
-        <AiOutlineUser />
-      </NavItem>
-      <NavItem
-        href="#experience"
-        active={activeNav === "#experience"}
-        onClick={() => setActiveNav("#experience")}
-      >
-        <BiBook />
-      </NavItem>
-      <NavItem
-        href="#services"
-        active={activeNav === "#services"}
-        onClick={() => setActiveNav("#services")}
-      >
-        <RiServiceLine />
-      </NavItem>
-      <NavItem
-        href="#contact"
-        active={activeNav === "#contact"}
-        onClick={() => setActiveNav("#contact")}
-      >
-        <MdOutlineMessage />
-      </NavItem>
+      <NavLogo href="#">
+        IC<span>.</span>
+      </NavLogo>
+      <NavLinks>
+        <NavItem href="#about" $active={activeNav === "#about"}>
+          About
+        </NavItem>
+        <NavItem href="#experience" $active={activeNav === "#experience"}>
+          Skills
+        </NavItem>
+        <NavItem href="#portfolio" $active={activeNav === "#portfolio"}>
+          Work
+        </NavItem>
+        <NavItem href="#testimonial" $active={activeNav === "#testimonial"}>
+          Testimonials
+        </NavItem>
+        <NavCta href="#contact" $active={activeNav === "#contact"}>
+          Contact
+        </NavCta>
+      </NavLinks>
     </NavWrapper>
   );
 }

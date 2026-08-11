@@ -1,31 +1,78 @@
 import { styled } from "styled-components";
 
 export const NavWrapper = styled.nav`
-  background: rgba(0, 0, 0, 0.3);
-  width: max-content;
-  display: block;
-  padding: 0.7rem 1.7rem;
   position: fixed;
-  z-index: 10;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   display: flex;
-  gap: 0.8rem;
-  border-radius: 3rem;
-  backdrop-filter: blur(15px);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(10, 10, 26, 0.8);
+  border-bottom: 1px solid var(--color-glass-border);
+  transition: var(--transition);
 `;
 
-export const NavItem = styled.a<{ active: Boolean }>`
-  background: ${({ active }) =>
-    active ? "var(--color-primary)" : "transparent"};
-  padding: 0.8rem;
-  border-radius: 50%;
-  display: flex;
-  color: ${({ active }) => (active ? "var(--color-bg)" : "var(--color-light)")};
-  font-size: 1.1rem;
+export const NavLogo = styled.a`
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-white);
+  letter-spacing: -0.5px;
+
+  span {
+    color: var(--color-primary);
+  }
 
   &:hover {
-    background: rgba(0, 0, 0, 0.3);
+    color: var(--color-white);
+  }
+`;
+
+export const NavLinks = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  @media (max-width: 600px) {
+    gap: 1rem;
+  }
+`;
+
+export const NavItem = styled.a<{ $active: boolean }>`
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: ${({ $active }) =>
+    $active ? "var(--color-primary)" : "var(--color-light)"};
+  transition: var(--transition);
+  letter-spacing: 0.5px;
+
+  &:hover {
+    color: var(--color-primary);
+  }
+`;
+
+export const NavCta = styled.a<{ $active?: boolean }>`
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-white);
+  background: ${({ $active }) =>
+    $active ? "var(--color-primary-hover)" : "var(--color-primary)"};
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--radius-pill);
+  transition: var(--transition);
+  box-shadow: ${({ $active }) =>
+    $active ? "0 0 12px rgba(124, 106, 255, 0.4)" : "none"};
+
+  &:hover {
+    background: var(--color-primary-hover);
+    color: var(--color-white);
+  }
+
+  @media (max-width: 600px) {
+    display: none;
   }
 `;

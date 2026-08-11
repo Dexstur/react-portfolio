@@ -1,9 +1,11 @@
-import moniePaddy from "/moniePaddy.png";
 import warpspeed from "/warpspeed_base.png";
 import loopfreight from "/loopfreight.png";
+import lpfTracking from "/lpf-tracking.png";
+import ahaVaccination from "/aha-vaccination.png";
 
 interface PortfolioDataItem {
   title: string;
+  description: string;
   img: string;
   alt: string;
   github: string;
@@ -13,23 +15,38 @@ interface PortfolioDataItem {
 export const portfolioItems: PortfolioDataItem[] = [
   {
     title: "Warpspeed Financials",
+    description:
+      "Production fintech platform with dashboards, RBAC, transaction workflows and real-time collaboration features.",
     img: warpspeed,
-    alt: "WarpSpeed",
+    alt: "Warpspeed Financials",
     github: "#",
     url: "https://warpspeedng.com",
   },
   {
-    title: "Loopfreight - Logistics platform",
+    title: "AHA Vaccination Campaign",
+    description:
+      "Full-stack vaccination campaign management with offline sync, analytics dashboards and interactive Leaflet maps.",
+    img: ahaVaccination,
+    alt: "AHA Vaccination Campaign",
+    github: "#",
+    url: "https://ahadataroom.com",
+  },
+  {
+    title: "Loopfreight Logistics",
+    description:
+      "End-to-end logistics platform with driver rewards, webhook management and role-based admin controls.",
     img: loopfreight,
     alt: "Loopfreight",
     github: "#",
     url: "https://useloopfreight.com/",
   },
   {
-    title: "Monie Paddy-Demo Payment app",
-    img: moniePaddy,
-    alt: "Monie paddy",
-    github: "https://github.com/Dexstur/monie-paddie",
-    url: "https://monie-paddy.onrender.com/login",
+    title: "Fleet Management & Tracking",
+    description:
+      "Live GPS tracking with geo-fencing, remote operations, dual payment flows and Google Maps integration.",
+    img: lpfTracking,
+    alt: "Loopfreight Tracking",
+    github: "#",
+    url: "https://track.useloopfreight.com",
   },
 ];
