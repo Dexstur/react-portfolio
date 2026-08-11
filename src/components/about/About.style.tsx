@@ -4,60 +4,48 @@ export const AboutSection = styled.section``;
 
 export const AboutContainer = styled.div`
   display: grid;
-  grid-template-columns: 35% 50%;
-  gap: 15%;
+  grid-template-columns: 35% 1fr;
+  gap: 4rem;
+  align-items: center;
 
   @media (max-width: 1024px) {
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 2rem;
   }
 `;
 
 export const AboutMe = styled.div`
   width: 100%;
-  aspect-ratio: 1/1;
-  border-radius: 2rem;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    var(--color-primary),
-    transparent
-  );
-  display: grid;
-  place-items: center;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
 
   @media (max-width: 1024px) {
-    width: 50%;
-    margin: 2rem auto 4rem auto;
+    width: 60%;
+    margin: 0 auto;
   }
 
   @media (max-width: 600px) {
-    width: 65%;
-    margin: 0 auto 3rem;
+    width: 75%;
   }
 `;
 
 export const AboutImgContainer = styled.div`
-  border-radius: 2rem;
-  width: 100%;
-  height: 100%;
+  border-radius: var(--radius-md);
   overflow: hidden;
-  transform: rotate(10deg);
-  transition: var(--transition);
-
-  &:hover {
-    transform: rotate(0deg);
-  }
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  padding: 0.5rem;
 `;
 
 export const AboutImg = styled.img`
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  border-radius: 8px;
 `;
 
 export const AboutContent = styled.div`
-  @media (max-width: 600px) {
+  @media (max-width: 1024px) {
     text-align: center;
   }
 `;
@@ -65,32 +53,33 @@ export const AboutContent = styled.div`
 export const AboutDeck = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 1rem;
+  margin-bottom: 2rem;
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 0.8rem;
   }
 `;
 
 export const AboutCard = styled.article`
-  background: var(--color-bg-variant);
-  border: 1px solid transparent;
-  border-radius: 1rem;
-  padding: 2rem;
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-md);
+  padding: 1.2rem;
   text-align: center;
   transition: var(--transition);
 
   &:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
+    background: var(--color-glass-hover);
+    border-color: rgba(255, 255, 255, 0.12);
   }
 `;
 
 export const CardHead = styled.h5`
-  margin-top: 1rem;
-  font-size: 0.9rem;
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 500;
 `;
 
 export const CardSmall = styled.small`
@@ -100,13 +89,14 @@ export const CardSmall = styled.small`
 
 export const AboutInfo = styled.div`
   color: var(--color-light);
-  padding: 2rem 0;
+  font-size: 0.9rem;
+  line-height: 1.8;
 
-  @media (max-width: 1024px) {
-    padding: 1rem 0 1.5rem;
+  p {
+    margin-bottom: 1rem;
   }
 
-  @media (max-width: 600px) {
-    padding: 1.5rem 0;
+  @media (max-width: 1024px) {
+    margin-bottom: 1.5rem;
   }
 `;

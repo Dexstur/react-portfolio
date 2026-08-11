@@ -19,66 +19,75 @@ function Services() {
       <ServicesContainer className="container">
         <ServicesCard>
           <ServiceTop>
-            <ServiceHead>Web Design</ServiceHead>
+            <ServiceHead>Frontend Development</ServiceHead>
           </ServiceTop>
           <ServiceList>
             <ServiceListItem>
               <BiCheck className="service__icon" />
-              <ServiceListContent>Rich and seamless UI/UX</ServiceListContent>
+              <ServiceListContent>
+                Responsive, performant UIs with React and Next.js
+              </ServiceListContent>
             </ServiceListItem>
             <ServiceListItem>
               <BiCheck className="service__icon" />
-              <ServiceListContent>Responsive designs</ServiceListContent>
+              <ServiceListContent>
+                Modern styling with Tailwind CSS, shadcn/ui and Styled
+                Components
+              </ServiceListContent>
             </ServiceListItem>
             <ServiceListItem>
               <BiCheck className="service__icon" />
-              <ServiceListContent>Role based access control</ServiceListContent>
+              <ServiceListContent>
+                Interactive dashboards with Recharts and Chart.js
+              </ServiceListContent>
             </ServiceListItem>
             <ServiceListItem>
               <BiCheck className="service__icon" />
-              <ServiceListContent>SEO compliant sites</ServiceListContent>
+              <ServiceListContent>
+                Map integrations with Google Maps and Leaflet
+              </ServiceListContent>
             </ServiceListItem>
             <ServiceListItem>
               <BiCheck className="service__icon" />
-              <ServiceListContent>SSR with Next.js</ServiceListContent>
+              <ServiceListContent>
+                SSR, SEO optimization and smooth animations with Framer Motion
+              </ServiceListContent>
             </ServiceListItem>
           </ServiceList>
         </ServicesCard>
         <ServicesCard>
           <ServiceTop>
-            <ServiceHead>Web Development</ServiceHead>
+            <ServiceHead>Backend Development</ServiceHead>
           </ServiceTop>
           <ServiceList>
             <ServiceListItem>
               <BiCheck className="service__icon" />
               <ServiceListContent>
-                Fast and secure applications
+                Scalable APIs with Node.js, NestJS and Express
               </ServiceListContent>
             </ServiceListItem>
             <ServiceListItem>
               <BiCheck className="service__icon" />
               <ServiceListContent>
-                Robust and scalable web applications
-              </ServiceListContent>
-            </ServiceListItem>
-            <ServiceListItem>
-              <BiCheck className="service__icon" />
-              <ServiceListContent>RESTful APIs</ServiceListContent>
-            </ServiceListItem>
-            <ServiceListItem>
-              <BiCheck className="service__icon" />
-              <ServiceListContent>Graphql</ServiceListContent>
-            </ServiceListItem>
-            <ServiceListItem>
-              <BiCheck className="service__icon" />
-              <ServiceListContent>
-                Live communications with web sockets
+                REST, GraphQL and WebSocket real-time communication
               </ServiceListContent>
             </ServiceListItem>
             <ServiceListItem>
               <BiCheck className="service__icon" />
               <ServiceListContent>
-                Containerization using docker
+                Database design with PostgreSQL, MongoDB, MySQL and Redis
+              </ServiceListContent>
+            </ServiceListItem>
+            <ServiceListItem>
+              <BiCheck className="service__icon" />
+              <ServiceListContent>
+                Authentication, RBAC and security with JWT and Passport
+              </ServiceListContent>
+            </ServiceListItem>
+            <ServiceListItem>
+              <BiCheck className="service__icon" />
+              <ServiceListContent>
+                Containerization with Docker and AWS deployment workflows
               </ServiceListContent>
             </ServiceListItem>
           </ServiceList>
