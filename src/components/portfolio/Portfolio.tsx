@@ -3,8 +3,10 @@ import {
   PortfolioContainer,
   PortfolioItem,
   PortfolioImgContainer,
-  PortfolioHead,
   PortfolioImg,
+  PortfolioHead,
+  PortfolioDescription,
+  PortfolioBody,
   PortfolioCta,
 } from "./Portfolio.style";
 import { portfolioItems } from "./Portfolio.data";
@@ -12,7 +14,7 @@ import { portfolioItems } from "./Portfolio.data";
 function Portfolio() {
   return (
     <PortfolioSection id="portfolio">
-      <h5>My Recent Work</h5>
+      <h5>My recent work</h5>
       <h2>Portfolio</h2>
 
       <PortfolioContainer className="container">
@@ -21,15 +23,27 @@ function Portfolio() {
             <PortfolioImgContainer>
               <PortfolioImg src={item.img} alt={item.alt} />
             </PortfolioImgContainer>
-            <PortfolioHead>{item.title}</PortfolioHead>
-            <PortfolioCta>
-              <a href={item.github} className="btn" target="_blank">
-                Github
-              </a>
-              <a href={item.url} className="btn btn-primary" target="_blank">
-                Visit
-              </a>
-            </PortfolioCta>
+            <PortfolioBody>
+              <PortfolioHead>{item.title}</PortfolioHead>
+              <PortfolioDescription>{item.description}</PortfolioDescription>
+              <PortfolioCta>
+                {item.github !== "#" && (
+                  <a href={item.github} className="btn" target="_blank">
+                    Github
+                  </a>
+                )}
+                {item.url !== "#" && (
+                  <a href={item.url} className="btn btn-primary" target="_blank">
+                    Visit
+                  </a>
+                )}
+                {item.github === "#" && item.url === "#" && (
+                  <span className="btn" style={{ cursor: "default", opacity: 0.5 }}>
+                    Private
+                  </span>
+                )}
+              </PortfolioCta>
+            </PortfolioBody>
           </PortfolioItem>
         ))}
       </PortfolioContainer>

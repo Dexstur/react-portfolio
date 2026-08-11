@@ -19,47 +19,47 @@ import { VscFolderLibrary } from "react-icons/vsc";
 function About() {
   return (
     <AboutSection id="about">
-      <h5>Get To Know</h5>
+      <h5>Get to know</h5>
       <h2>About Me</h2>
 
       <AboutContainer className="container">
         <AboutMe>
           <AboutImgContainer>
-            <AboutImg src={Me} alt="me" />
+            <AboutImg src={Me} alt="Isichei Chukwuka" />
           </AboutImgContainer>
         </AboutMe>
         <AboutContent>
           <AboutDeck>
             <AboutCard>
-              <FaAward color="#4db5ff" size={"1.4rem"} />
+              <FaAward color="#7c6aff" size="1.4rem" />
               <CardHead>Experience</CardHead>
-              <CardSmall>1 Year Work Experience</CardSmall>
+              <CardSmall>5+ Years</CardSmall>
             </AboutCard>
             <AboutCard>
-              <FiUsers color="#4db5ff" size={"1.4rem"} />
+              <FiUsers color="#7c6aff" size="1.4rem" />
               <CardHead>Collaborators</CardHead>
-              <CardSmall>15+ Developers</CardSmall>
+              <CardSmall>25+ Developers</CardSmall>
             </AboutCard>
             <AboutCard>
-              <VscFolderLibrary color="#4db5ff" size={"1.4rem"} />
+              <VscFolderLibrary color="#7c6aff" size="1.4rem" />
               <CardHead>Projects</CardHead>
-              <CardSmall>6+ Completed projects</CardSmall>
+              <CardSmall>10+ Delivered</CardSmall>
             </AboutCard>
           </AboutDeck>
           <AboutInfo>
             <p>
-              Hello there! I'm a full stack developer, and this is where my
-              digital journey unfolds. I'm here to turn ideas into immersive web
-              experiences, blending innovation with technology. My work is a
-              fusion of creativity and functionality,with the aim of delivering
-              efficient and optimized solutions, I can't wait to share it with
-              you.
+              Full Stack Developer with expertise building production-grade web
+              applications using TypeScript across frontend and backend.
+              Experienced delivering fintech, real-time communication,
+              healthcare, logistics and enterprise solutions from architecture
+              through deployment.
             </p>
             <p>
-              Whether you're a fellow developer looking to collaborate or an
-              employer seeking a tech-savvy problem solver, let's connect and
-              create something extraordinary. Explore my portfolio to see what I
-              can bring to the table.
+              Skilled in React, Next.js, Node.js, NestJS, REST, GraphQL, AWS
+              deployments, Docker, Redis, SQL/NoSQL databases, authentication,
+              and AI-assisted development workflows. I thrive in collaborative
+              environments and excel at breaking down complex problems into
+              manageable, high-quality deliverables.
             </p>
           </AboutInfo>
           <a href="#contact" className="btn btn-primary">

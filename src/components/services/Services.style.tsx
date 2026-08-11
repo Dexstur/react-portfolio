@@ -5,59 +5,62 @@ export const ServicesSection = styled.section``;
 export const ServicesContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
-
-  @media (max-width: 1024px) {
-    grid-template-columns: 1fr 1fr;
-  }
+  gap: 1.5rem;
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 `;
 
 export const ServicesCard = styled.article`
-  background: var(--color-bg-variant);
-  border-radius: 0 0 2rem 2rem;
-  border: 1px solid var(--color-primary);
-  height: fit-content;
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-md);
+  padding: 2rem;
   transition: var(--transition);
 
   &:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
+    background: var(--color-glass-hover);
+    border-color: rgba(255, 255, 255, 0.12);
   }
 
-  @media (max-width: 1024px) {
-    height: auto;
+  @media (max-width: 600px) {
+    padding: 1.5rem;
   }
 `;
 
 export const ServiceTop = styled.div`
-  background: var(--color-primary);
-  padding: 2rem;
-  border-radius: 0 0 2rem 2rem;
-  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
 `;
 
 export const ServiceHead = styled.h3`
-  color: var(--color-bg);
-  font-size: 1rem;
-  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-white);
 `;
 
 export const ServiceList = styled.ul`
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 `;
 
 export const ServiceListItem = styled.li`
   display: flex;
-  gap: 4rem;
-  margin-bottom: 0.8rem;
+  align-items: flex-start;
+  gap: 0.8rem;
+
+  .service__icon {
+    color: var(--color-primary);
+    margin-top: 3px;
+    flex-shrink: 0;
+    font-size: 1rem;
+  }
 `;
 
 export const ServiceListContent = styled.p`
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  color: var(--color-light);
+  line-height: 1.6;
 `;
